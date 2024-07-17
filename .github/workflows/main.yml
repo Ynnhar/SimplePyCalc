@@ -4,20 +4,18 @@ on: [push, pull_request]
 
 jobs:
   build:
-    
-    
     runs-on: ubuntu-latest
     
     
     steps:
     - name: Check out repository code
-    uses: actions/checkout@v3
+      uses: actions/checkout@v3
       
       
     - name: Set up Python
-    uses: actions/setup-checkout@v4
-    with:
-      python-version: '3.x'
+      uses: actions/setup-checkout@v4
+      with:
+        python-version: '3.x'
     
     
     - name: Install dependencies
